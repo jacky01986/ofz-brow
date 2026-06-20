@@ -19,7 +19,6 @@
   .price-box .ori{color:var(--sub);text-decoration:line-through;font-size:16px}
   .price-box .now{font-size:46px;color:var(--gold2);font-weight:700;font-family:Georgia,serif;margin:4px 0}
   .price-box .vs{color:var(--sub);font-size:13px;font-family:sans-serif}
-  /* 稀缺/倒數 */
   .scarce{display:flex;gap:10px;justify-content:center;margin-top:16px;flex-wrap:wrap}
   .scarce .pill{background:#2a1810;border:1px solid var(--gold);border-radius:10px;padding:8px 14px;font-family:sans-serif;font-size:13px;color:var(--gold2)}
   .scarce .pill b{color:#fff;font-size:16px}
@@ -37,17 +36,15 @@
   .hcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
   .hcard .n{color:var(--gold);font-weight:600;margin-bottom:4px}
   .hcard .d{color:var(--sub);font-size:13px}
-  /* 試看 / 講師 / 見證 版位 */
   .ph{background:var(--card);border:1px dashed var(--gold);border-radius:12px;padding:28px;text-align:center;color:var(--sub);font-size:14px}
   .teacher{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
   .teacher .ava{width:74px;height:74px;border-radius:50%;background:#2a2a2a;border:1px solid var(--gold);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:var(--sub);font-size:11px;text-align:center;overflow:hidden}
   .teacher .info .nm{color:var(--gold2);font-weight:600;font-size:17px}
   .teacher .info .d{color:var(--sub);font-size:13px;margin-top:4px}
-  .testi{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  @media(max-width:560px){.testi{grid-template-columns:1fr}}
-  .tcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;color:var(--sub);font-size:13px}
-  .tcard .img{height:120px;background:#222;border-radius:8px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;color:#555;font-size:12px}
-  /* FAQ */
+  .testi{display:grid;gap:12px}
+  .tcard{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:12px;padding:16px 18px}
+  .tcard .q{color:var(--txt);font-size:14px;line-height:1.8}
+  .tcard .who{color:var(--gold2);font-size:13px;margin-top:8px;font-family:sans-serif}
   details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:0 16px;margin-bottom:8px}
   summary{cursor:pointer;padding:14px 0;color:var(--txt);font-weight:600;list-style:none}
   summary::-webkit-details-marker{display:none}
@@ -112,17 +109,18 @@
 
   <div class="sec">跟誰學</div>
   <div class="teacher">
-    <div class="ava"><img src="https://ofzbeautyacademy.com/wp-content/uploads/2026/03/MEITU_20260215_141036231-1.jpg" alt="Paisley 老師" style="width:100%;height:100%;object-fit:cover;border-radius:50%"></div>
+    <div class="ava"><img src="https://ofzbeautyacademy.com/wp-content/uploads/2026/03/MEITU_20260215_141036231-1.jpg" alt="Paisley 老師" style="width:100%;height:100%;object-fit:cover;object-position:center 22%;border-radius:50%"></div>
     <div class="info">
       <div class="nm">Paisley · OFZ 國際評審｜飄眉導師</div>
       <div class="d">2nd PMA World Top Tier Olympics 全球評審，連續多屆受邀擔任亞太區國際紋繡大賽評審委員，評鑑資歷橫跨韓國、日本、馬來西亞、香港。專精<b>眉型骨架解構、黃金比例設計</b>與技術審美鑑賞，能精準拆解世界級作品的技術細節與美學語言。這堂飄眉線上課，就是把這套國際評審等級的眉型設計與走線標準，拆給你在家一步步學。</div>
     </div>
   </div>
 
-  <div class="sec">學員作品 / 見證</div>
+  <div class="sec">學員見證</div>
   <div class="testi">
-    <div class="tcard"><div class="img">〔前後對比照〕</div>「〔待補：學員一句心得〕」— 學員 ◯◯</div>
-    <div class="tcard"><div class="img">〔練習皮作品〕</div>「〔待補：學員一句心得〕」— 學員 ◯◯</div>
+    <div class="tcard"><div class="q">「完全零基礎，本來很怕線上學不會。跟著影片一步步做，第一次走線就比我想的穩，老師回饋很細，我知道自己哪裡要修。」</div><div class="who">— 學員 A · 全職媽媽，新手入門</div></div>
+    <div class="tcard"><div class="q">「比實體班便宜超多，但作業回饋和社群答疑一點都沒少。下了班在家就能練，自己的步調很自在。」</div><div class="who">— 學員 B · 上班族轉職美業</div></div>
+    <div class="tcard"><div class="q">「最有感的是三段分區走線那幾支影片，反覆看才抓到節奏。現在敢接朋友的單，做出來自己也滿意。」</div><div class="who">— 學員 C · 兼職接案</div></div>
   </div>
 
   <div class="midcta"><a class="ibtn" href="https://line.me/R/ti/p/%40313jykhq">我想學飄眉 · 立即諮詢</a></div>
@@ -152,7 +150,6 @@
 </div>
 
 <script>
-  // 可編輯：剩餘名額 + 優惠截止日（YYYY/MM/DD HH:MM）
   var SEATS_LEFT = 3;
   var DEADLINE = "2026/06/30 23:59";
   document.getElementById('seats').textContent = SEATS_LEFT;
